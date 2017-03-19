@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Использовались сторонние шрифты для некоторых иконок -->
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+	<!-- Для работы я использовал бутстрап, как более-менее понятный мне фреймворк -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
+	<title>МОНТ</title>
+</head>
+<body>
+
+<!-- wrapper для прибия футера к полу, а также для бэкграунда (его я на макете не нашел, пришлось брать сам макет с нарисованными на нем элементами и стирать их в фотошопе) -->
+<div class="wrap">
+
+	<!-- Стандартный бутстраповский navbar -->
+	<nav class="navbar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<!-- Лого было с синим фоном, удалять его не стал -->
+		<a class="navbar-brand" href="#">
+			<img alt="МОНТ" src="images/logo.png">
+		</a>
+
+		<!-- Я бился над этим около часа, так и не понял как мне кнопку сделать на узком экране слева, а на широком справа -->
+			<div class="navbar-text pull-right"><a class="semi-transparent-button">Вход</a></div>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav navbar-center">
+			<li><a href="#">Описание</a></li>
+			<li><a href="#">Программа</a></li>
+			<li><a href="#">Место проведения</a></li>
+
+			<!-- К стыду своему, так и не понял, как запретить перенос элементов меню на новую строку. поэтому на узких экранах три пункта скрыты -->
+			<li class="visible-lg-block visible-xs-block"><a href="#">Докладчики</a></li>
+			<li class="visible-lg-block visible-xs-block"><a href="#">Видео</a></li>
+			<li class="visible-lg-block visible-xs-block"><a href="#">Фото</a></li>
+		</ul>
+		</div>
+	</div>
+	</nav>
+<div class="main-container">
+	<div class="text-center">
+		<p class="lection">Лекция</p>
+		<h1 class="header">Программа маркетинговой поддержки партнеров ESET'2017</h1>
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-2 col-md-6 col-xs-12">
+
+				<!-- Не стал использовать картинки с макета, использовал fontawesome -->
+				<i class="fa fa-map-marker" aria-hidden="true"></i> <span class="address">Москва, Лотте Плаза</span>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<i class="fa fa-calendar-check-o" aria-hidden="true"></i> <span class="date">10 февраля, с 11:00</span>
+			</div>
+		</div>
+		<button type="button" class="btn reg-button">Зарегистрироваться</button>
+		<div class="social">
+			<ul class="social__navlist">
+				<li class="social-share"><a href="#"></a></li>
+				<li class="social-vk"><a href="#"></a></li>
+				<li class="social-fb"><a href="#"></a></li>
+				<li class="social-ok"><a href="#"></a></li>
+				<li class="social-gplus"><a href="#"></a></li>
+				<li class="social-tw"><a href="#"></a></li>
+				<li class="social-in"><a href="#"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- Чтобы футер к полу прибить -->
+<div class="brick"></div>
+</div>
+<div class="footer">
+	<div class="container">
+	<div class="footer-main">
+	<div class="row">
+	<div class="col-xs-12 col-lg-3">
+		<ul class="list-inline footer-copyright">
+			<li>© 2016 MONT group of companies.</li>
+			<li>Все права защищены.</li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-lg-4">
+		<ul class="list-inline footer-address">
+			<li>123557, Россия, Москва,</li>
+			<li>ул. Пресненский Вал, 14</li>
+		</ul>
+		<ul class="list-inline">
+			<li class="list-inline__link"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Центральный офис на карте</a></li>
+		</ul>
+		<ul class="list-inline">
+			<li class="list-inline__link"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:mont@mont.com">mont@mont.com</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-lg-2">
+		<ul class="list-inline social-footer">
+			<li class="list-inline__social footer-social-fb"><a href="#"></a></li>
+			<li class="list-inline__social footer-social-in"><a href="#"></a></li>
+			<li class="list-inline__social footer-social-im"><a href="#"></a></li>
+			<li class="list-inline__social footer-social-vk"><a href="#"></a></li>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-lg-3">
+		<ul class="list-inline">
+			<li class="phone">8 800 700 5557</li>
+			<li class="text-muted">Звонок по России бесплатный.</li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
